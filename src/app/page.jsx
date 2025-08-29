@@ -177,74 +177,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Everything you need for modern communication
-              </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Rexxie combines the best features of modern chat applications with powerful admin tools designed specifically for Indian businesses.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="bg-gradient-to-br from-blue-500 to-orange-500 rounded-2xl p-8 text-white">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                      <Users className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="font-semibold">Team Chat</p>
-                      <p className="text-sm opacity-90">Real-time collaboration</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                      <Lock className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="font-semibold">Secure Messaging</p>
-                      <p className="text-sm opacity-90">End-to-end encryption</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                      <Smartphone className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="font-semibold">Mobile Ready</p>
-                      <p className="text-sm opacity-90">Works on all devices</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center">
-                <Star className="w-8 h-8 text-white" />
-              </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-green-400 rounded-full flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-orange-500">
