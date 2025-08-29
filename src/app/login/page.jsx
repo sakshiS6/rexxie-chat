@@ -234,10 +234,10 @@ const LoginPage = () => {
                         <p className="text-sm text-gray-600">Full system access</p>
                       </div>
                       <Badge variant="outline" className="text-xs">
-                        username: admin
+                        username: user
                       </Badge>
                     </div>
-                    <p className="text-xs text-gray-500 mt-1">password: admin123</p>
+                    <p className="text-xs text-gray-500 mt-1">password: user@26</p>
                   </div>
                   <p className="text-xs text-gray-600">
                     Admin can manage users, monitor conversations, and configure the system.
