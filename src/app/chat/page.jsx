@@ -81,7 +81,7 @@ const ChatPage = () => {
   const establishConnection = async (token) => {
     try {
       // Establish Server-Sent Events connection
-      const eventSource = new EventSource(`http://localhost:5000/api/chat/stream?token=${encodeURIComponent(token)}`);
+      const eventSource = new EventSource(`https://rexxie-backend.onrender.com/api/chat/stream?token=${encodeURIComponent(token)}`);
       eventSourceRef.current = eventSource;
       
       eventSource.onopen = () => {
@@ -157,7 +157,7 @@ const ChatPage = () => {
       }
 
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/chat/send', {
+      const response = await fetch('https://rexxie-backend.onrender.com/api/chat/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
