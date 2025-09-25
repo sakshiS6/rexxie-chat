@@ -108,7 +108,7 @@ const LoginPage = () => {
                 </h1>
               </div>
               <p className="text-xl lg:text-2xl text-gray-600 font-medium mb-2">
-                India's own work official chat box
+                Workspace Communication Platform
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-orange-500 mx-auto lg:mx-0 rounded-full"></div>
             </div>
@@ -128,25 +128,11 @@ const LoginPage = () => {
               ))}
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 text-center lg:text-left">
-              <div className="bg-white/50 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-blue-600">10K+</div>
-                <div className="text-sm text-gray-600">Active Users</div>
-              </div>
-              <div className="bg-white/50 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-orange-600">99.9%</div>
-                <div className="text-sm text-gray-600">Uptime</div>
-              </div>
-              <div className="bg-white/50 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl font-bold text-green-600">24/7</div>
-                <div className="text-sm text-gray-600">Support</div>
-              </div>
-            </div>
+            
           </div>
         </div>
 
-        {/* Right Side - Login Form */}
+        {/* Right Side-Login Form */}
         <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
           <Card className="shadow-2xl border-0 bg-white/90 backdrop-blur-sm max-w-md mx-auto">
             <CardHeader className="text-center pb-6">
@@ -231,13 +217,12 @@ const LoginPage = () => {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-semibold text-blue-600">Admin Account</p>
-                        <p className="text-sm text-gray-600">Full system access</p>
                       </div>
                       <Badge variant="outline" className="text-xs">
-                        username: user
+                        Username: user
                       </Badge>
                     </div>
-                    <p className="text-xs text-gray-500 mt-1">password: user@26</p>
+                    <p className="text-xs text-gray-500 mt-1">Password: user@26</p>
                   </div>
                   <p className="text-xs text-gray-600">
                     Admin can manage users, monitor conversations, and configure the system.
@@ -247,11 +232,7 @@ const LoginPage = () => {
             </CardContent>
           </Card>
 
-          <div className="text-center mt-6">
-            <p className="text-sm text-gray-500">
-              Powered by Rexxie • Secure • Reliable • Made in India
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
